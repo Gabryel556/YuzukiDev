@@ -8,12 +8,13 @@
         { "name": "home", "link": "#home", "icon": "assets/icons/Home.png" },
         { "name": "sobre", "link": "#sobre", "icon": "assets/icons/Sobre.png" },
         { "name": "conteúdos", "link": "#conteudos", "icon": "assets/icons/Conteudos.png" },
+        { "name": "agenda", "link": "#agenda", "icon": "assets/icons/Agenda.png" },
         { "name": "links", "link": "#links", "icon": "assets/icons/Toma.png" }
     ],
     "home": {
         "title": "Conheça Yuzuki",
         "subtitle": "creator ✨ vtuber ✨ gamer ✨ Po play de todos os jogos do mundo",
-        "mainImage": "assets/icons/HomeYuzuki.png",
+        "mainImage": "assets/images/HomeYuzuki.png",
         "buttons": [
             { "text": "Vire membro", "icon": "assets/icons/Youtube.png", "link": "https://www.youtube.com/channel/UC9Q6xjRIHu-0TCdbLBoKu0A/join" },
             { "text": "E o pix meu gostoso?", "icon": "assets/icons/Pix.png", "link": "https://www.livepix.gg/yuzukivt" },
@@ -45,7 +46,7 @@
             "Agora, transmitindo sua voz e sua presença através das telas, Yuzuki compartilha seu brilho com aqueles que a encontram. Seus espectadores não são apenas “fãs”, mas sim companheiros escolhidos pela própria luz, chamados carinhosamente de Seraphyuz.",
             "Cada vez que alguém se junta à sua jornada, Yuzuki sente suas asas ficarem mais fortes, como se cada riso, cada momento, fosse uma nova pena em suas plumas celestiais. Juntos, eles formam um coro de almas luminosas, unidos pelo calor da amizade e pela promessa de nunca deixar que a escuridão apague sua chama."
         ],
-        "image": "assets/icons/Yuzuki.png"
+        "image": "assets/images/Yuzuki.png"
     },
     "contents": {
         "title": "✨ Conteúdos ✨",
@@ -53,25 +54,38 @@
                 "title": "Vídeos Recentes (YouTube)",
                 "platform": "youtube",
                 "items": [
-                    { "url": "https://www.youtube.com/watch?v=iF0fgQoQhR4&ab_channel=Yuzuki", "title": "【Debut Vtuber】Yuzuki Seraphina╵Profecia Cumprida: A Estrela Seraphina Surge!" }
+                    { "url": "https://www.youtube.com/watch?v=iF0fgQoQhR4&ab_channel=Yuzuki", "title": "【Debut Vtuber】Yuzuki Seraphina╵Profecia Cumprida: A Estrela Seraphina Surge!" },
+                    { "url": "https://www.youtube.com/watch?v=5Njfmg1yuo0", "title": "SIM, ELE EXISTE - A Dificuldade de carregar o Bing Bong de OURO!" }
                 ]
             },
             {
                 "title": "Clipes da Twitch",
                 "platform": "twitch",
                 "items": [
-                    { "url": "https://clips.twitch.tv/EmbarrassedVainDogeYouWHY-EXAMPLE1", "title": "", "thumbnail": "assets/images/thumb_twitch_1.jpg" },
-                    { "url": "https://clips.twitch.tv/SarcasticOddGorillaPraiseIt-EXAMPLE2", "title": "", "thumbnail": "assets/images/thumb_twitch_2.jpg" }
+                    { "url": "https://www.twitch.tv/yuzukivtt/clip/CheerfulRoundBaboonJKanStyle-uwQe1JNl6aep4Wzu", "title": "Quadra retake sage", "thumbnail": "assets/images/twitch1.jpg" },
+                    { "url": "https://www.twitch.tv/yuzukivtt/clip/HomelyAverageGarlicAliens-OkzhVdT7cMfvNpPN", "title": "4K JETT", "thumbnail": "assets/images/twitch2.jpg" }
                 ]
             },
             {
                 "title": "Reels no Instagram",
                 "platform": "instagram",
                 "items": [
-                    { "url": "https://www.instagram.com/p/EXAMPLE1", "title": "", "thumbnail": "assets/images/thumb_instagram_1.jpg" },
-                    { "url": "https://www.instagram.com/p/EXAMPLE2", "title": "", "thumbnail": "assets/images/thumb_instagram_2.jpg" }
+                    { "url": "https://www.instagram.com/p/EXAMPLE1", "title": "", "thumbnail": "assets/images/instagram1.jpg" },
+                    { "url": "https://www.instagram.com/p/EXAMPLE2", "title": "", "thumbnail": "assets/images/instagram2.jpg" }
                 ]
             }
+        ]
+    },
+    "schedule": {
+        "title": "📅 Agenda Semanal 📅",
+        "days": [
+            { "day": "Segunda-feira dd/mm", "program": "Live de Valorios iniciando às 14h" },
+            { "day": "Terça-feira dd/mm", "program": "Descanso" },
+            { "day": "Quarta-feira dd/mm", "program": "Live de Pique iniciando às 14h" },
+            { "day": "Quinta-feira dd/mm", "program": "Descanso" },
+            { "day": "Sexta-feira dd/mm", "program": "Premier iniciando às 14h" },
+            { "day": "Sábado dd/mm", "program": "Live de raft iniciando 14h" },
+            { "day": "Domingo dd/mm", "program": "Descanso / Possível live surpresa" }
         ]
     },
     "importantLinks": {
@@ -89,8 +103,8 @@
             { "text": "Seja sub na Twitch", "icon": "assets/icons/Twitch.png", "link": "https://www.twitch.tv/subs/yuzukivtt" },
             { "text": "Presenteie com Jogos", "icon": "assets/icons/Steam.png", "link": "https://store.steampowered.com/wishlist/profiles/76561199247114611/?sort=discount", "description": "(Lista de Desejos Steam)" }
         ],
-        "characterImage": "assets/icons/Yuzuki.png",
-        "mascotImage": "assets/icons/Yuzuki.png"
+        "characterImage": "assets/images/Yuzuki.png",
+        "mascotImage": "assets/images/Yuzuki.png"
     },
     "footer": {
         "contactTitle": "Contato",

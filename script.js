@@ -34,6 +34,7 @@ function buildPage(data) {
     loadHome(data.home);
     loadAbout(data.about);
     loadContents(data.contents);
+    loadSchedule(data.schedule);
     loadLinks(data.importantLinks);
     loadFooter(data.footer, data.importantLinks.social);
     const navLinks = document.querySelectorAll('#main-nav a');
@@ -70,7 +71,6 @@ function createStarryNightEffect() {
     const backgroundContainer = document.getElementById('starrynight-bg-container');
     if (!backgroundContainer) return;
 
-    // Função para gerar número aleatório
     function random(min, max) {
         return Math.random() * (max - min) + min;
     }
@@ -78,7 +78,6 @@ function createStarryNightEffect() {
     const r = document.documentElement;
     const rs = window.getComputedStyle(r);
 
-    // Criar as estrelas de fundo
     const canvasSize = backgroundContainer.clientWidth * backgroundContainer.clientHeight;
     const starsFraction = canvasSize / 4000;
     for (let i = 0; i < starsFraction; i++) {
@@ -101,7 +100,6 @@ function createStarryNightEffect() {
         backgroundContainer.appendChild(star);
     }
 
-    // Criar as estrelas cadentes
     for (let i = 0; i < 4; i++) {
         const shootingstar = document.createElement('span');
         shootingstar.className = 'shootingstar';
@@ -130,7 +128,7 @@ function createStarryNightEffect() {
                 shootingstar.style.right = '-4px';
             }
             shootingstar.style.animation = 'none';
-            void shootingstar.offsetWidth; // Trigger reflow
+            void shootingstar.offsetWidth;
             shootingstar.style.animation = '';
             shootingstar.style.animationDuration = `${Math.floor(Math.random() * 4) + 3}s`;
         });
@@ -215,6 +213,37 @@ function loadContents(contentsData) {
     });
     contentHTML += `</div>`;
     section.innerHTML = contentHTML;
+}
+
+function loadSchedule(scheduleData) {
+    const section = document.getElementById('agenda');
+    if (!scheduleData) return;
+
+    let tableRowsHtml = scheduleData.days.map(day => `
+        <tr>
+            <td>${day.day}</td>
+            <td>${day.program}</td>
+        </tr>
+    `).join('');
+
+    section.innerHTML = `
+        <div class="container">
+            <h2 class="section-title">${scheduleData.title}</h2>
+            <div class="schedule-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia da Semana</th>
+                            <th>Programação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${tableRowsHtml}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
 }
 
 function loadLinks(linksData) {
