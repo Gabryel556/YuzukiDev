@@ -366,6 +366,7 @@ header nav a.active img {}
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 #sobre .stat-item {
@@ -901,6 +902,9 @@ header nav a.active img {}
     background-color: rgba(243, 209, 215, 0.3);
 }
 
+
+/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+
 @media (max-width: 900px) {
     header nav {
         gap: 8px;
@@ -916,6 +920,15 @@ header nav a.active img {}
 }
 
 @media (max-width: 768px) {
+    /* --- GERAL --- */
+    .page-section {
+        padding: 40px 0;
+    }
+    .section-title {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    /* --- CABEÇALHO --- */
     header .container {
         flex-direction: column;
         gap: 15px;
@@ -923,30 +936,67 @@ header nav a.active img {}
     header nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 10px;
     }
-    #home .home-layout {
-        flex-direction: column;
-    }
-    .page-section {
-        padding: 40px 0;
-    }
-    .section-title {
-        font-size: 2.5em;
-        margin-bottom: 40px;
+    /* --- SEÇÃO HOME --- */
+    #home .container {
+        padding: 25px;
     }
     #home h1 {
         font-size: 3em;
     }
+    #home p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+    #home .home-layout {
+        flex-direction: column;
+    }
+    /* --- SEÇÃO SOBRE --- */
     #sobre .container {
         text-align: center;
+        gap: 30px;
     }
+    #sobre h2 {
+        font-size: 2.2em;
+    }
+    #sobre .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* --- SEÇÃO CONTEÚDOS E AGENDA --- */
+    .clips-container-title {
+        font-size: 1.6em;
+    }
+    #agenda .schedule-table-container {
+        overflow-x: auto;
+        /* Adiciona rolagem horizontal na tabela se necessário */
+    }
+    #agenda th,
+    #agenda td {
+        padding: 12px 8px;
+        font-size: 0.9em;
+    }
+    /* --- SEÇÃO LINKS --- */
+    .support-grid {
+        grid-template-columns: 1fr;
+        /* Garante uma única coluna */
+    }
+    /* --- SEÇÃO CONTATO E RODAPÉ --- */
     .contact-character-image,
     .contact-frog-image {
         display: none;
     }
-    .support-grid {
-        grid-template-columns: repeat(2, 1fr);
+    #contact .container {
+        text-align: center;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info h2 {
+        font-size: 2.8em;
     }
     #page-footer .footer-layout {
         text-align: center;
@@ -954,10 +1004,5 @@ header nav a.active img {}
     #page-footer .footer-info-column .footer-contact-info,
     #page-footer .footer-info-column .footer-socials {
         justify-content: center;
-    }
-    #agenda th,
-    #agenda td {
-        padding: 12px 8px;
-        font-size: 0.95em;
     }
 }
