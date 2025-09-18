@@ -716,7 +716,7 @@ header nav a.active img {}
 
 #page-footer {
     background-color: var(--header-bg);
-    color: #f0f0f0;
+    color: #ff0000;
     padding: 40px 20px;
     margin-top: 40px;
     border-top: 4px solid var(--primary-color);
@@ -726,7 +726,7 @@ header nav a.active img {}
 #page-footer h4 {
     font-family: var(--font-heading);
     font-size: 2em;
-    color: white;
+    color: rgb(255, 0, 0);
     margin-bottom: 15px;
 }
 
@@ -735,7 +735,7 @@ header nav a.active img {}
 }
 
 #page-footer .footer-contact-info a {
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s ease;
@@ -808,7 +808,7 @@ header nav a.active img {}
     margin-bottom: 6px;
     font-weight: 600;
     font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 0, 0, 0.85);
 }
 
 .form-group input[type="text"],
@@ -857,9 +857,6 @@ header nav a.active img {}
     margin-top: 20px;
 }
 
-
-/* --- ESTILOS DA AGENDA --- */
-
 #agenda .schedule-table-container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px 30px;
@@ -902,9 +899,6 @@ header nav a.active img {}
     background-color: rgba(243, 209, 215, 0.3);
 }
 
-
-/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
-
 @media (max-width: 900px) {
     header nav {
         gap: 8px;
@@ -920,7 +914,6 @@ header nav a.active img {}
 }
 
 @media (max-width: 768px) {
-    /* --- GERAL --- */
     .page-section {
         padding: 40px 0;
     }
@@ -928,7 +921,6 @@ header nav a.active img {}
         font-size: 2.5em;
         margin-bottom: 30px;
     }
-    /* --- CABEÇALHO --- */
     header .container {
         flex-direction: column;
         gap: 15px;
@@ -938,7 +930,6 @@ header nav a.active img {}
         justify-content: center;
         gap: 10px;
     }
-    /* --- SEÇÃO HOME --- */
     #home .container {
         padding: 25px;
     }
@@ -952,7 +943,6 @@ header nav a.active img {}
     #home .home-layout {
         flex-direction: column;
     }
-    /* --- SEÇÃO SOBRE --- */
     #sobre .container {
         text-align: center;
         gap: 30px;
@@ -964,25 +954,20 @@ header nav a.active img {}
         flex-direction: column;
         gap: 20px;
     }
-    /* --- SEÇÃO CONTEÚDOS E AGENDA --- */
     .clips-container-title {
         font-size: 1.6em;
     }
     #agenda .schedule-table-container {
         overflow-x: auto;
-        /* Adiciona rolagem horizontal na tabela se necessário */
     }
     #agenda th,
     #agenda td {
         padding: 12px 8px;
         font-size: 0.9em;
     }
-    /* --- SEÇÃO LINKS --- */
     .support-grid {
         grid-template-columns: 1fr;
-        /* Garante uma única coluna */
     }
-    /* --- SEÇÃO CONTATO E RODAPÉ --- */
     .contact-character-image,
     .contact-frog-image {
         display: none;
