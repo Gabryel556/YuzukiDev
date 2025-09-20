@@ -2,7 +2,7 @@
     "general": {
         "siteName": "Yuzuki",
         "logo": "assets/icons/LogoYuzuki.png",
-        "favicon": "assets/images/LogoYuzuki.png"
+        "favicon": "assets/icons/LogoYuzuki.png"
     },
     "navigation": [
         { "name": "home", "link": "#home", "icon": "assets/icons/Home.png" },
